@@ -1,0 +1,114 @@
+:root{
+
+    --Paleblue: hsl(225, 100%, 94%);
+    --Brightblue: hsl(245, 75%, 52%);
+    --Verypaleblue: hsl(225, 100%, 98%);
+    --Desaturatedblue: hsl(224, 23%, 55%);
+    --Darkblue: hsl(223, 47%, 23%);
+    --font-p: 16px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    background:hsl(225, 100%, 98%) url(/images/pattern-background-desktop.svg) no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+.card{
+    max-width: 420px;
+  border-radius: 18px;
+  background-color: #fff;
+  overflow: hidden;
+  box-shadow: 0px 17px 60px -12px rgba(56, 41, 224, 0.4);
+ 
+}
+.content__title{
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 32px ;
+    padding-bottom: 16px;
+}
+.content__des{
+    padding: 0 32px;
+    padding-bottom: 16px;
+    text-align: center;
+    color: var(--Desaturatedblue);
+
+}
+.content__plan{
+    margin: 0 46px;
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #F8F9FE;
+    border-radius: 8px;
+}
+.content__plan-des{
+    padding-right: 32px;
+}
+.content__plan-des>p{
+    color: var(--Desaturatedblue);
+
+}
+
+.content__plan > a{
+ color: var(--Brightblue);
+ font-weight: 700;
+}
+.content__plan > a:hover{
+    text-decoration: none;
+    opacity: 0.8;
+    transition: 0.2s;
+}
+button{
+    display: block;
+    margin: auto;
+    margin-top: 32px;
+    font-family:'Red Hat Display', sans-serif;
+    cursor: pointer;
+
+}
+.card__pay{
+    font-size: var(--font-p);
+    border: none;
+    background-color: var(--Brightblue);
+    color: #fff;
+    padding: 16px 90px;
+    border-radius: 16px;
+    box-shadow: 0px 16px 12px var(--Paleblue);
+
+
+}
+.card__pay:hover{
+    border: 1px solid var(--Brightblue);
+    background-color: #fff;
+    color: var(--Brightblue);
+    transition: 0.3s;
+}
+.card__cancel{
+    margin-bottom: 32px;
+    border: none;
+    font-size: var(--font-p);
+    background-color: transparent;
+    font-weight: 700;
+    color: var(--Desaturatedblue);
+}
+.card__cancel:hover{
+    color: #000;
+    transition: 0.3s;
+}
